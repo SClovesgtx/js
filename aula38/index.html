@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Lorem Ipsum</h1>
+        <div class="paragraphs">
+            <p>Lorem Ipsum is simply dummy text of the printing 
+                and typesetting industry. 
+            </p> 
+            <p>
+                Lorem Ipsum has been the industry's standard dummy text ever since 
+                the 1500s, when an unknown printer took a 
+                galley of type and scrambled it to make a 
+                type specimen book.
+            </p>
+        </div>
+    </section>
+</body>
+<script type="text/javascript"scr="./assets/js/main.js">
+    const paragraphs = document.querySelector('.paragraphs');
+    const allParagraphs = paragraphs.querySelectorAll('p');
+
+    const styles = getComputedStyle(document.body);
+    const bgColor = styles.backgroundColor;
+
+    for (p of allParagraphs) {
+        p.style.backgroundColor = bgColor;
+        p.style.color = "white";
+    }
+</script>
+</html>
